@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Speaker Registration</h1>
+    <p>Want to speak at our fake conference? Register here!</p>
+    <form action="#">
+        <div>
+            <label for="fullName">Full Name: </label>
+            <input type="text" placeholder="Enter Full Name" name="fullName" id="fullName">
+        </div>
+        <div>
+            <label for="email">Email Address: </label>
+            <input type="email" required placeholder="Email Address" name="email" id="email">
+        </div>
+        <div>
+            <label for="talkType1">Main Stage</label>
+            <input type="radio" checked name="talkType" id="talkType1">
+            <label for="talkType2">Workshop</label>
+            <input type="radio" name="talkType" id="talkType2">
+        </div>
+        <div>
+            <label for="talkType1">Main Stage</label>
+            <input type="checkbox" checked name="talkType" id="talkType1">
+            <label for="talkType2">Workshop</label>
+            <input type="checkbox" name="talkType" id="talkType2">
+        </div>
+        <div>
+            <label for="tShirt">T-Shirt Size</label>
+            <select name="tShirt" id="tShirt">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xLarge">Extra Large</option>
+            </select>
+        </div>
+        <div>
+            <label for="comments">Additional Comments</label>
+            <textarea name="comments" placeholder="Any other comments to add?" id="comments"></textarea>
+        </div>
+        <button>Submit</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</body>
+</html>
